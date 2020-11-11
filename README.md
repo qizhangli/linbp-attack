@@ -1,5 +1,5 @@
 # LinBP-Attack
-Code for our NeurIPS 2020 paper ***Backpropagating Linearly Improves Transferability of Adversarial Examples***.
+Code for our NeurIPS 2020 paper [Backpropagating Linearly Improves Transferability of Adversarial Examples](https://papers.nips.cc/paper/2020/hash/00e26af6ac3b1c1c49d7c3d79c60d000-Abstract.html).
 
 ## Environments
 * Python 3.7.4
