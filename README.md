@@ -69,7 +69,7 @@ python3 attack/imagenet/test.py --dir data/imagenet/linbp_ila_pgd
 The following resources are very helpful for our work:\
 Pretrained models for CIFAR-10: [bearpaw/pytorch-classification](https://github.com/bearpaw/pytorch-classification)\
 Pretrained models for ImageNet: [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch) and [torchvision.models](https://pytorch.org/docs/stable/torchvision/models)\
-GDAS: [D-X-Y/AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)
+GDAS: [D-X-Y/AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)\
 Pretrained GDAS: [ZiangYan/subspace-attack.pytorch](https://github.com/ZiangYan/subspace-attack.pytorch)
 
 ## Citation
