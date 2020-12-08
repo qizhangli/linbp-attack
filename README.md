@@ -1,5 +1,5 @@
 # LinBP-Attack
-Code for our NeurIPS 2020 paper [Backpropagating Linearly Improves Transferability of Adversarial Examples](https://papers.nips.cc/paper/2020/hash/00e26af6ac3b1c1c49d7c3d79c60d000-Abstract.html).
+Code for our NeurIPS 2020 paper [Backpropagating Linearly Improves Transferability of Adversarial Examples](https://arxiv.org/abs/2012.03528).
 
 ## Environments
 * Python 3.7.4
@@ -70,6 +70,7 @@ The following resources are very helpful for our work:\
 Pretrained models for CIFAR-10: [bearpaw/pytorch-classification](https://github.com/bearpaw/pytorch-classification)\
 Pretrained models for ImageNet: [Cadene/pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch) and [torchvision.models](https://pytorch.org/docs/stable/torchvision/models)\
 GDAS: [D-X-Y/AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)
+Pretrained GDAS: [ZiangYan/subspace-attack.pytorch](https://github.com/ZiangYan/subspace-attack.pytorch)
 
 ## Citation
 ```
