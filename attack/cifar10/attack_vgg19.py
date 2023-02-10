@@ -75,11 +75,6 @@ if __name__ == '__main__':
         img = ori_img.clone()
         m = 0
         for i in range(niters):
-            if method == 'mdi2fgsm' or method == 'linbp_mdi2fgsm':
-                if i == 0:
-                    img_x = img
-                else:
-                    img_x = input_diversity(img)
             # In our implementation of PGD, we incorporate randomness at each iteration to further enhance the transferability
             elif 'pgd' in method:
                 img_x = img + img.new(img.size()).uniform_(-epsilon, epsilon)
@@ -87,9 +82,9 @@ if __name__ == '__main__':
                 img_x = img
             img_x.requires_grad_(True)
             if 'linbp' in method:
-                output = vgg19_forw(model, img_x, True, linbp_layer)
+                output = vgg19_forw(model, input_diversity(img_x) if method == 'mdi2fgsm' or method == 'linbp_mdi2fgsm' else img_x, True, linbp_layer)
             else:
-                output = vgg19_forw(model, img_x, False, None)
+                output = vgg19_forw(model, input_diversity(img_x) if method == 'mdi2fgsm' or method == 'linbp_mdi2fgsm' else img_x, False, None)
             loss = nn.CrossEntropyLoss()(output, label.to(device))
             model.zero_grad()
             loss.backward()
